@@ -1,0 +1,175 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <LINK rel="Bookmark" href="/favicon.ico" >
+  <LINK rel="Shortcut Icon" href="/favicon.ico" />
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="lib/html5.js"></script>
+  <script type="text/javascript" src="lib/respond.min.js"></script>
+  <script type="text/javascript" src="lib/PIE_IE678.js"></script>
+  <![endif]-->
+  <link href="css/H-ui.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+  <link href="skin/default/skin.css" rel="stylesheet" type="text/css" id="skin" />
+  <link href="lib/Hui-iconfont/iconfont.css" rel="stylesheet" type="text/css" />
+  <!--[if IE 6]>
+  <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+  <script>DD_belatedPNG.fix('*');</script>
+  <![endif]-->
+  <title>百家利-会员管理后台</title>
+  <style>
+  .btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+  </style>
+</head>
+<body>
+  <header class="Hui-header cl">
+    <a class="Hui-logo l"  href="/">百家利</a>
+
+    <ul class="Hui-userbar">
+      <li>会员</li>
+      <li class="dropDown dropDown_hover">
+        <a href="#" class="dropDown_A">
+          王芳 <i class="Hui-iconfont">&#xe6d5;</i>
+        </a>
+        <ul class="dropDown-menu radius box-shadow">
+          <li>
+            <a href="/logout.php">退出</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a aria-hidden="false" class="Hui-nav-toggle" href="#"> <b><i class="Hui-iconfont Hui-iconfont-fenlei"></i></b> 
+    </a>
+  </header>
+  <aside class="Hui-aside">
+    <input runat="server" id="divScrollValue" type="hidden" value="" />
+    <div class="menu_dropdown bk_2">
+      <dl id="menu-article">
+        <dt>
+          <i class="Hui-iconfont">&#xe616;</i>
+          <a href="welcome.html">投资资料</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe687;</i>
+          <a href="bossmoney.html">入金流程</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe61a;</i>
+          <a href="bossTransfers2.html">转账记录</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe687;</i>
+          <a href="bossroll.html" >规则与条款</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe6d0;</i>
+          <a href="connus.html" >联络我们</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe67d;</i>
+          <a href="/logout.php" >登  出</a>
+        </dt>
+      </dl>
+
+    </div>
+  </aside>
+  <div class="dislpayArrow">
+    <a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
+  </div>
+  <section class="Hui-article-box">
+    <div id="Hui-tabNav" class="Hui-tabNav">
+      <div class="Hui-tabNav-wp">
+        <ul id="min_title_list" class="acrossTab cl">
+          <li class="active">
+            <span title="投资资料" data-href="welcome.php">转账记录</span> <em></em>
+          </li>
+        </ul>
+      </div>''
+      <div class=" btn-group" style="display:none;">
+        <a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;">
+          <i class="Hui-iconfont">&#xe6d4;</i>
+        </a>
+        <a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;">
+          <i class="Hui-iconfont">&#xe6d7;</i>
+        </a>
+      </div>
+    </div>
+    <div id="iframe_box" class="Hui-article">
+      <div class="show_iframe">
+        <div style="display:none" class="loading"></div>
+
+        <nav class="breadcrumb">
+          <i class="Hui-iconfont">&#xe67f;</i>
+          首页
+          <span class="c-gray en">&gt;</span>
+          转账记录
+        </nav>
+        <div class="pd-20" style="border-bottom: 1px solid #ccc;padding-top:20px;background-color: #dff0d8;margin-bottom: 20px;">
+
+          <p class="f-20 text-success">
+            我的投资类别：
+            <span class="text-muted">百家利</span>
+          </p>
+          <p>
+            投资总额：
+            <span>100</span>
+          </p>
+          <p>
+            开始日期：
+            <span>2016-02-12</span>
+          </p>
+          <p>
+            结束日期：
+            <span>2017-02-12</span>
+          </p>
+
+          <a href="showFundsData.php?day_type=1" target="_parent"  class="btn btn btn-info radius">查看更多</a>
+        </div>
+        <footer class="footer">
+          <center>Copyright © 1999-2016 百家利投资有限公司</center>
+        </footer>
+        <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/H-ui.js"></script>
+        <script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+        <script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+        <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+        <script type="text/javascript" src="js/H-ui.admin.js"></script>
+        <script type="text/javascript" src="lib/bootstrap-modal/2.2.4/bootstrap-modalmanager.js"></script>
+        <script type="text/javascript" src="lib/bootstrap-modal/2.2.4/bootstrap-modal.js"></script>
+        <script>
+  $('.jin').click(function(){
+    $(this).prop("disabled","disabled");
+    var data = $('#jin').serialize();
+    $.post('/jin.php',data,function(data){
+      alert(data);
+      location.reload();
+    })
+  })
+</script>
+</body>
+      </html>

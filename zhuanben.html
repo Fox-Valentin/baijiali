@@ -1,0 +1,248 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<LINK rel="Bookmark" href="/favicon.ico" >
+<LINK rel="Shortcut Icon" href="/favicon.ico" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="skin/default/skin.css" rel="stylesheet" type="text/css" id="skin" />
+<link href="lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>百家利-会员管理后台</title>
+</head>
+<body>
+<header class="Hui-header cl"> <a class="Hui-logo l"  href="/">百家利</a> 
+
+  <ul class="Hui-userbar">
+    <li>会员</li>
+    <li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">王芳 <i class="Hui-iconfont">&#xe6d5;</i></a>
+      <ul class="dropDown-menu radius box-shadow">
+        <li><a href="/logout.php">退出</a></li>
+      </ul>
+    </li>
+  </ul>
+  <a aria-hidden="false" class="Hui-nav-toggle" href="#"><b><i class="Hui-iconfont Hui-iconfont-fenlei"></i></b></a> </header>
+<aside class="Hui-aside">
+  <input runat="server" id="divScrollValue" type="hidden" value="" />
+  <div class="menu_dropdown bk_2">
+    <dl id="menu-article">
+      <dt><i class="Hui-iconfont">&#xe616;</i> <a href="welcome.php">投资资料</a></dt>
+    </dl>
+    <dl id="menu-picture">
+      <dt><i class="Hui-iconfont">&#xe687;</i>  <a href="bossmoney.php" >入金流程</a></dt>
+    </dl>
+    <dl id="menu-picture">
+      <dt><i class="Hui-iconfont">&#xe61a;</i>  <a href="bossTransfers2.php">转账记录</a></dt>
+    </dl>
+    <dl id="menu-picture">
+      <dt><i class="Hui-iconfont">&#xe687;</i>  <a href="bossroll.php" >规则与条款</a></dt>
+    </dl>
+    <dl id="menu-picture">
+      <dt><i class="Hui-iconfont">&#xe6d0;</i>  <a href="connus.php" >联络我们</a></dt>
+    </dl>
+    <dl id="menu-picture">
+      <dt><i class="Hui-iconfont">&#xe67d;</i>  <a href="/logout.php" >登  出</a></dt>
+    </dl>
+    
+  
+    
+    
+  </div>
+</aside>
+<div class="dislpayArrow"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<section class="Hui-article-box">
+  <div id="Hui-tabNav" class="Hui-tabNav">
+    <div class="Hui-tabNav-wp">
+      <ul id="min_title_list" class="acrossTab cl">
+        <li class="active"><span title="投资资料" data-href="welcome.php">提取/转本</span><em></em></li>
+      </ul>
+    </div>
+    <div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
+  </div>
+  <div id="iframe_box" class="Hui-article">
+    <div class="show_iframe">
+      <div style="display:none" class="loading"></div>
+
+      
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 提取/转本  </nav>
+<div class="pd-20">
+  
+  <div class="cl pd-5 bg-1 bk-blue mt-20"> 
+        <div class="col-md-12">
+                    <!--statistics start-->
+                    <div class="row">
+                        <div class="col-md-12">
+                           <div class="panel">
+                              <div class="panel-body p-states">
+                                     		
+ <div class="modal-header">
+    <h3 id="myModalLabel">红利提现/转本<span style='color:red;font-size:16px'>（提取低于100美金将收取5美金手续费）</span></h3><a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+ </div>
+  <div class="modal-body">
+  <form id='tiqu'>
+ <p>提现（转本）月份：
+	 <input name='yuefen[]' type='checkbox' value='1' >1月
+	 <input name='yuefen[]' type='checkbox' value='2' >2月
+	 <input name='yuefen[]' type='checkbox' value='3' >3月
+	 <input name='yuefen[]' type='checkbox' value='4' >4月
+	 <input name='yuefen[]' type='checkbox' value='5' checked="checked">5月
+	 <input name='yuefen[]' type='checkbox' value='6' checked="checked">6月
+	 <input name='yuefen[]' type='checkbox' value='7'  checked="checked">7月
+ </p>
+ <p>提取方式：<input name='type' type='radio' value='1'  checked="checked">提取<input name='type' type='radio' value='0' >转本</p>
+ <p>开户名：<input style='width:134px' type='text' name='b_username' value='王芳' readonly>(如需更改，请联系客服)</p>
+ <div id="province">开户行省市：</div> 
+ <p>开户行：<select name='bname' id='bname'>
+	<option value="中国工商银行">中国工商银行</option>
+	<option value="中国银行">中国银行</option>
+	<option value="中国建设银行">中国建设银行</option>
+	<option value="中国农业银行">中国农业银行</option>
+	<option value="交通银行">交通银行</option>
+	<option value="中国民生银行">中国民生银行</option>
+	<option value="中国光大银行">中国光大银行</option>
+	<option value="华夏银行">华夏银行</option>
+	<option value="中信银行">中信银行</option>
+	<option value="广东发展银行">广东发展银行</option>
+	<option value="上海浦东发展银行">上海浦东发展银行</option>
+	<option value="兴业银行">兴业银行</option>
+	<option value="平安银行">平安银行</option>
+	<option value="北京银行">北京银行</option>
+</select>（请尽量使用工行、中行、建行、农行的卡）</p>
+<p>分&nbsp;&nbsp;&nbsp;&nbsp;行：<input style='width:134px' type='text' name='fenhang' value='萧山通惠路支行' ><button type='button' class="btn btn-primary size-S radius" id='cfh'>查询分行的方法</button></p>
+ <p>卡&nbsp;&nbsp;&nbsp;&nbsp;号：<input style='width:167px' type='text' name='b_no'  value='6236681540000147939' id='b_no'><input type='hidden' name='user_id' value='2106'></p>
+	<p>注意：所有信息请务必填写准确，否则一切责任后果自负</p>
+	<p>提示：转本即把红利转入本金，让您利滚利，并且低于100美金转本是不收手续费的</p>
+ </div>
+  <div class="modal-footer">
+ <button class="btn btn-primary tiqu" aria-hidden="true" type='button'>确定</button> </form>
+ </div>
+
+                           </div>
+                        </div>
+          </div>
+        </div>
+   </div>
+  
+</div>
+
+<footer class="footer">
+     <center>Copyright © 1999-2016 百家利投资有限公司</center>
+</footer>
+
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+<script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script> 
+<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script> 
+<script type="text/javascript" src="lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="js/H-ui.js"></script> 
+<script type="text/javascript" src="js/H-ui.admin.js"></script> 
+<script type="text/javascript" src="/js/jquery.provincesCity.js"></script> 
+<script type="text/javascript" src="/js/provincesData.js"></script> 
+<script type="text/javascript" src="lib/bootstrap-modal/2.2.4/bootstrap-modalmanager.js"></script>
+<script type="text/javascript" src="lib/bootstrap-modal/2.2.4/bootstrap-modal.js"></script>
+
+
+<script>
+	$('.jin').click(function(){
+		$(this).prop("disabled","disabled");
+		var data = $('#jin').serialize();
+		$.post('/jin.php',data,function(data){
+			alert(data);
+			location.reload();
+		})
+	});
+	$('.tiqu').click(function(){
+		var b_no = $("#b_no").val();
+		if(isNaN(b_no)){
+			alert("银行卡号需要是数字");
+		}else if(b_no.length != 19 && b_no.length != 16){
+			alert("银行卡长度错误");
+		}else{
+			var data = $('#tiqu').serialize();
+			$.post('/tiqug.php',data,function(data){
+				alert(data);
+				if(data == '申请成功，若您需要修改银行信息，或者需要提取其他月红利，请尽快联系客服.' || data == '您已成功申请，请勿重复点击'){
+					location.reload();	
+				}
+				
+			})
+		}
+		
+	});
+	$(function(){
+		$("#province").ProvinceCity();
+	});
+	$("#bname").change(function(){
+		if($(this).val()!='中国工商银行' && $(this).val()!='中国银行' && $(this).val()!='中国建设银行' && $(this).val()!='中国农业银行'){
+			alert('您当前选择的是非四大行，提取红利将会收取手续费')
+		}
+	});
+	$("#cfh").click(function(){
+		var bname = $("#bname").val();
+		if(bname=='中国工商银行'){
+			alert("用手机编辑短信KHH#卡号或账号至95588");
+		}
+		if(bname=='中国银行'){
+			alert("请拨打95566查询");
+		}
+		if(bname=='中国建设银行'){
+			alert("用手机编辑短信khcx#银行卡号发送到95533");
+		}
+		if(bname=='中国农业银行'){
+			alert("请拨打95599查询");
+		}
+		if(bname=='交通银行'){
+			alert("请拨打95559查询");
+		}
+		if(bname=='中国民生银行'){
+			alert("用手机编辑短信：khhcx+#+卡号 到民生银行全国统一客服95568");
+		}
+		if(bname=='中国光大银行'){
+			alert("用手机编辑短信开户行#卡号到95595");
+		}
+		if(bname=='华夏银行'){
+			alert("用手机编辑短信khhcx+#+卡号 到华夏银行全国统一客服95577");
+		}
+		if(bname=='中信银行'){
+			alert("请拨打95558");
+		}
+		if(bname=='广东发展银行'){
+			alert("请拨打95508");
+		}
+		if(bname=='上海浦东发展银行'){
+			alert("请拨打95528");
+		}
+		if(bname=='兴业银行'){
+			alert("编辑短信 khhcx#卡号 到兴业银行全国统一客服95561");
+		}
+		if(bname=='平安银行'){
+			alert("请拨打95511转3");
+		}
+		if(bname=='北京银行'){
+			alert("请拨打955368");
+		}
+	})
+</script>
+</body>
+</html>
+
+

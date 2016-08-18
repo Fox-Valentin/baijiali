@@ -1,0 +1,240 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <LINK rel="Bookmark" href="/favicon.ico" >
+  <LINK rel="Shortcut Icon" href="/favicon.ico" />
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="lib/html5.js"></script>
+  <script type="text/javascript" src="lib/respond.min.js"></script>
+  <script type="text/javascript" src="lib/PIE_IE678.js"></script>
+  <![endif]-->
+  <link href="css/H-ui.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+  <link href="skin/default/skin.css" rel="stylesheet" type="text/css" id="skin" />
+  <link href="lib/Hui-iconfont/iconfont.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!--[if IE 6]>
+  <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+  <script>DD_belatedPNG.fix('*');</script>
+  <![endif]-->
+  <title>百家利-会员管理后台</title>
+</head>
+<body>
+  <header class="Hui-header cl">
+    <a class="Hui-logo l"  href="/">百家利</a>
+
+    <ul class="Hui-userbar">
+      <li>会员</li>
+      <li class="dropDown dropDown_hover">
+        <a href="#" class="dropDown_A">
+          王芳 <i class="Hui-iconfont">&#xe6d5;</i>
+        </a>
+        <ul class="dropDown-menu radius box-shadow">
+          <li>
+            <a href="/logout.php">退出</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a aria-hidden="false" class="Hui-nav-toggle" href="#"> <b><i class="Hui-iconfont Hui-iconfont-fenlei"></i></b> 
+    </a>
+  </header>
+  <aside class="Hui-aside">
+    <input runat="server" id="divScrollValue" type="hidden" value="" />
+    <div class="menu_dropdown bk_2">
+      <dl id="menu-article">
+        <dt>
+          <i class="Hui-iconfont">&#xe616;</i>
+          <a href="welcome.html">投资资料</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe687;</i>
+          <a href="bossmoney.html">入金流程</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe61a;</i>
+          <a href="bossTransfers2.html">转账记录</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe687;</i>
+          <a href="bossroll.html" >规则与条款</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe6d0;</i>
+          <a href="connus.html">联络我们</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe67d;</i>
+          <a href="/logout.php" >登  出</a>
+        </dt>
+      </dl>
+
+    </div>
+  </aside>
+  <div class="dislpayArrow">
+    <a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
+  </div>
+  <section class="Hui-article-box">
+    <div id="Hui-tabNav" class="Hui-tabNav">
+      <div class="Hui-tabNav-wp">
+        <ul id="min_title_list" class="acrossTab cl">
+          <li class="active">
+            <span title="投资资料" data-href="welcome.php">投资资料</span> <em></em>
+          </li>
+        </ul>
+      </div>
+      <div class="Hui-tabNav-more btn-group">
+        <a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;">
+          <i class="Hui-iconfont">&#xe6d4;</i>
+        </a>
+        <a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;">
+          <i class="Hui-iconfont">&#xe6d7;</i>
+        </a>
+      </div>
+    </div>
+    <div id="iframe_box" class="Hui-article">
+      <div class="show_iframe">
+        <div style="display:none" class="loading"></div>
+
+        <nav class="breadcrumb">
+          <i class="Hui-iconfont">&#xe67f;</i>
+          首页
+          <span class="c-gray en">&gt;</span>
+          规则与条款
+        </nav>
+        <div class="pd-20">
+
+          <div class="cl pd-5 bg-1 bk-blue mt-20">
+            <div class="col-md-12">
+              <!--statistics start-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel">
+                    <div class="panel-body p-states">
+                      <div class="summary" style="font-size:18px">
+                        <p align="center">百家利投资规则</p>
+                        <p>
+                          百家利为了更好的勤勉尽责，依法合规开展会员融资活动、履行约定义务，特制定并公示《投资人及代理商规则》，本投资人规则为百家利及会员《用户服务协议》（以下简称“用户协议”）的补充，根据用户协议的约定，本规则一经公示即对用户具有法律约束力。
+                        </p>
+                        <p>
+                          本投资人规则的内容与用户协议之约定不一致的，以本规则为准；
+                          <br></p>
+                        <p>第一条投资人实名认证</p>
+                        <p>1.投资人应按照百家利的实名认证流程，向百家利提交真实有效的身份信息；</p>
+                        <p>2.向百家利申请实名认证的投资人必须阅读并接受《用户协议》；</p>
+                        <p>3.未通过百家利实名认证的投资人，不得在百家利上浏览融资项目的融资信息，不享有《用户协议》中的任何服务；</p>
+                        <p>4.百家利有权委托第三方对投资人进行符合法律法规要求的实名认证；</p>
+                        <p>
+                          <br>第二条合格投资人认证</p>
+                        <p>1.个人合格投资人需要符合下列条件之一：</p>
+                        <p>（1）最近三年个人年均收入不低于5000美金；</p>
+                        <p>
+                          （2）资产不低于2万美金；本条所指的资产包括银行存款、房产、汽车、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等；
+                        </p>
+                        <p>2.合格投资人需要符合下列条件：</p>
+                        <p>（1）投资单个融资项目的最低金额不低于100美金；</p>
+                        <p>（2）投资人必须与介绍方式加入投资，无介绍方不得进行投资；</p>
+                        <p>3.申请投资人认证的投资者应当承担下列责任：</p>
+                        <p>（1）按照百家利要求提供真实、准确和完整的身份信息；</p>
+                        <p>（2）保证投资资金来源合法；</p>
+                        <p>
+                          （3）主动了解融资项目投资风险，并确认其具有相应的风险认知和承受能力；
+                          <br>
+                          <br>3.只有通过百家利合格投资人身份认证的投资人，才能对百家利上的融资项目进行投资；</p>
+                        <p>（1）投资达到一定金额以后可以享受会员服务，详情请咨询客服；</p>
+                        <p>4.投资人利润规则</p>
+                        <p>（1）利润分年红利跟月红利，月红利的50%为年红利；</p>
+                        <p>（2）月红利为当月所赚利润，月末即可提取</p>
+                        <p>
+                          （3）年红利为所有月红利的50%，经过整个自然年后提取；
+                          <br></p>
+                        <p>第三条 代理商加盟</p>
+                        <p>1.代理商是指经过百家利认证并且缴纳代理费的指定合作个人</p>
+                        <p>2.经由代理商推荐加入的代理商，同样与上级代理商享受同样义务以及责任。</p>
+                        <p>3.代理商需要符合下列条件：</p>
+                        <p>（1）应充分认同百家利的发展原则及方向；</p>
+                        <p>（2）在推广方面具有丰富经验，独立的判断力，丰富的行业资源和影响力，很强的风险承受能力；</p>
+                        <p>（3）具有投资管理能力以及投后管理能力；</p>
+                        <p>（4）勤勉尽职，乐于分享；</p>
+                        <p>4.代理商与投资人应以双向自愿选择为原则，代理商与投资人可以相互邀请进行约谈；</p>
+                        <p>5.代理商利润详情请参考代理商等级说明；</p>
+                        <p>
+                          6.代理商出金为会员出金后的一个自然月 结算日15:00前登陆百家利平台进行操作，操作成功后的15个工作日内自动拨回存入账户；
+                        </p>
+                        <p>
+                          <br>第四条 出入金规则</p>
+                        <p>1.入金规则及存入后详情确认：</p>
+                        <p>（1）单笔100美金起，最小单位为100美金，每月限额请联系客服确认当月投资限额；</p>
+                        <p>（2）通过百家利官方微信（wechat）在线确认入金金额；</p>
+                        <p>（3）每日随利率浮动进入收益额；</p>
+                        <p>（4）入金产生的手续费请投资人自行承担；</p>
+                        <p>2.出金规则</p>
+                        <p>（1）结算日17:00（北京时间）前登陆百家利平台进行操作，操作成功后的15个工作日内自动拨回存入账户；</p>
+                        <p>(2) 结算时必须提供入金凭证，入金时保留存根；</p>
+                        <p>（3）法定节假日入金出金有延期的可能性；</p>
+                        <p>
+                          （4）入金产生的手续费请投资人自行承担；
+                          <br></p>
+                        <p>第五条 投资意向与协议</p>
+                        <p>1.投资人应与代理商达成投资意向；</p>
+                        <p>2.当代理商不得隐瞒有可能影响跟投资人资决策的重要信息；</p>
+                        <p>第六条 投资人承诺</p>
+                        <p>
+                          1.投资人承诺并保证其提供的所有资料或发布的所有信息是真实、准确、完整的，符合中国各项法律、法规及规范性文件以及本规则，不存在虚假、误导性陈述或重大遗漏，并承诺及时对已提供的资料或发布的信息进行更新、维护和管理；
+                        </p>
+                        <p>
+                          2.投资人承诺并保证依据自身判断对融资项目做出独立的投资决定、审慎发出投资意向；投资人承诺其所发出的投资意向为其真实的、不可撤销的意思表示，保证依据其发出的投资意向履行合同义务。投资人保证依法、依约完成其通过使用百家利提供的投资项目；
+                        </p>
+                        <p>
+                          3.投资人承诺并保证其已充分了解并知晓投资项目的风险，其将合理评估自身的投资认知能力与风险承受能力，理性选择合适的投资方式，且该投资行为造成的后果和风险由其自行承担；
+                        </p>
+                        <p>4.投资人承诺并保证若其违反上述承诺和保证而给百家利或用户造成损失承担相应的赔偿责任。；</p>
+                        <p>第七条 附则</p>
+                        <p>1.本规则服务期限自本规则生效之日起至投资人会员资格或代理商资格自愿或被终止之日止；</p>
+                        <p>2.本规则自上公告起生效；</p>
+                        <p>
+                          3.本规则受中华人民共和国现行有效的法律、法规及规范性文件的约束。在本规则执行过程中，若出现与本规则有关的争议，各方应尽量本着友好协商的精神予以协商解决；若各方于三十日内协商不能解决或任意一方不同意协商解决的，则任何一方有权将争议提交人民法院通过诉讼解决；
+                        </p>
+                        <p>阅读困难者请向客服索取繁体中文版本</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <footer class="footer">
+          <center>Copyright © 1999-2016 百家利投资有限公司</center>
+        </footer>
+
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="http://mcafc.com/admin/lc/php/app.php?widget-init.js"></script>
+  <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+  <script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+  <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+  <script type="text/javascript" src="lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/H-ui.js"></script>
+  <script type="text/javascript" src="js/H-ui.admin.js"></script>
+</body>
+</html>

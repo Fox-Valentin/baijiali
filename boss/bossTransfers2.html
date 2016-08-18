@@ -1,0 +1,187 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <LINK rel="Bookmark" href="/favicon.ico" >
+  <LINK rel="Shortcut Icon" href="/favicon.ico" />
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="lib/html5.js"></script>
+  <script type="text/javascript" src="lib/respond.min.js"></script>
+  <script type="text/javascript" src="lib/PIE_IE678.js"></script>
+  <![endif]-->
+  <link href="css/H-ui.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+  <link href="skin/default/skin.css" rel="stylesheet" type="text/css" id="skin" />
+  <link href="lib/Hui-iconfont/iconfont.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!--[if IE 6]>
+  <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+  <script>DD_belatedPNG.fix('*');</script>
+  <![endif]-->
+  <title>百家利-会员管理后台</title>
+</head>
+<body>
+  <header class="Hui-header cl">
+    <a class="Hui-logo l"  href="/">百家利</a>
+
+    <ul class="Hui-userbar">
+      <li>会员</li>
+      <li class="dropDown dropDown_hover">
+        <a href="#" class="dropDown_A">
+          王芳 <i class="Hui-iconfont">&#xe6d5;</i>
+        </a>
+        <ul class="dropDown-menu radius box-shadow">
+          <li>
+            <a href="/logout.php">退出</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a aria-hidden="false" class="Hui-nav-toggle" href="#"> <b><i class="Hui-iconfont Hui-iconfont-fenlei"></i></b> 
+    </a>
+  </header>
+  <aside class="Hui-aside">
+    <input runat="server" id="divScrollValue" type="hidden" value="" />
+    <div class="menu_dropdown bk_2">
+      <dl id="menu-article">
+        <dt>
+          <i class="Hui-iconfont">&#xe616;</i>
+          <a href="welcome.html">投资资料</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe687;</i>
+          <a href="bossmoney.html">入金流程</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe61a;</i>
+          <a href="bossTransfers2.html">转账记录</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe687;</i>
+          <a href="bossroll.html" >规则与条款</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe6d0;</i>
+          <a href="connus.html" >联络我们</a>
+        </dt>
+      </dl>
+      <dl id="menu-picture">
+        <dt>
+          <i class="Hui-iconfont">&#xe67d;</i>
+          <a href="/logout.php" >登  出</a>
+        </dt>
+      </dl>
+
+    </div>
+  </aside>
+  <div class="dislpayArrow">
+    <a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
+  </div>
+  <section class="Hui-article-box">
+    <div id="Hui-tabNav" class="Hui-tabNav">
+      <div class="Hui-tabNav-wp">
+        <ul id="min_title_list" class="acrossTab cl">
+          <li class="active">
+            <span title="投资资料" data-href="welcome.php">转账记录</span> <em></em>
+          </li>
+        </ul>
+      </div>
+      <div class="Hui-tabNav-more btn-group">
+        <a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;">
+          <i class="Hui-iconfont">&#xe6d4;</i>
+        </a>
+        <a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;">
+          <i class="Hui-iconfont">&#xe6d7;</i>
+        </a>
+      </div>
+    </div>
+    <div id="iframe_box" class="Hui-article">
+      <div class="show_iframe">
+        <div style="display:none" class="loading"></div>
+
+        <nav class="breadcrumb">
+          <i class="Hui-iconfont">&#xe67f;</i>
+          首页
+          <span class="c-gray en">&gt;</span>
+          转账记录
+        </nav>
+        <div class="pd-20">
+
+          <div class="cl pd-5 bg-1 bk-blue mt-20">
+            <div class="col-md-12">
+              <!--statistics start-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel">
+                    <div class="panel-body p-states">
+                      <div class="summary">
+                        <h4>
+                          起始积分：
+                          <span></span>
+                        </h4>
+                        <span>日期：開始日2016-02-12～結束日2017-02-12</span>
+                        <h3 class="red-txt">
+                          <i class="fa fa-level-up success"></i>
+                          100
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-20">
+            <div class="cl mt-20">
+
+              <h3>积分转帐记录表(2016-02-12至2017-02-12)</h3>
+            </div>
+            <table class="table table-border table-bordered table-hover table-bg">
+
+              <thead>
+                <tr class="text-c">
+                  <th width="120">日期</th>
+                  <th width="140">支出</th>
+                  <th width="140">存入</th>
+                  <th width="240">账户</th>
+                  <th >备注</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <br>
+                <div class="Huialert Huialert-danger">
+                  <i class="icon-remove"></i>
+                  对不起，暂时没有资料！
+                </div>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <footer class="footer">
+          <center>Copyright © 1999-2016 百家利投资有限公司</center>
+        </footer>
+        <script type="text/javascript" src="http://mcafc.com/admin/lc/php/app.php?widget-init.js"></script>
+        <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+        <script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+        <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+        <script type="text/javascript" src="lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/H-ui.js"></script>
+        <script type="text/javascript" src="js/H-ui.admin.js"></script>
+</body>
+      </html>
