@@ -131,6 +131,47 @@
         </nav>
         <div class="pd-20" style="border-bottom: 1px solid #ccc;padding-top:20px;background-color: #dff0d8;margin-bottom: 20px;">
 
+<a data-toggle="modal" href="#myModal" class="btn btn-primary size-L">17入金/加金</a>
+<!---->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <h3 id="myModalLabel">入金/加金</h3>
+    <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+  </div>
+  <div class="modal-body">
+    <form id='jin'>
+      <input type='hidden'name='user_id' value='2106'>
+      <input type='hidden'name='name' value='王芳'>
+      <input type='hidden'name='user_type' value='boss'>
+      <p>
+        打款人姓名：
+        <input name='dkr_name' type='text'></p>
+      <p>
+        打款方式：
+        <input name='dk_type' type='radio' value='1' checked="checked">
+        支付宝
+        <input name='dk_type' type='radio' value='0'>
+        银行卡
+        <input name='dk_type' type='radio' value='2'>其他</p>
+      <p>
+        打款金额（人民币）：
+        <input type='text' name='amount'></p>
+      <p>
+        到账日期：
+        <input type='text' name='dk_date' onfocus="WdatePicker({maxDate:'%y-%M-%d'})" class='Wdate'></p>
+      <p>
+        到账时间：
+        <input type='text' name='dk_time'>
+        <span style="color:red">
+          （格式：13:21）
+          <span></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary jin" type='button'>确定</button>
+          <button class="btn" data-dismiss="modal" aria-hidden="true" type='button'>关闭</button>
+        </form>
+      </div>
+    </div> 
           <p class="f-20 text-success">
             我的投资类别：
             <span class="text-muted">百家利</span>
